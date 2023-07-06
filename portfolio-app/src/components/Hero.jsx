@@ -21,8 +21,12 @@ const Hero = () => {
             see my skills and let's connect to discuss exciting opportunities.
           </p>
           <div className="text-5xl flex justify-center gap-5 pt-6">
-            <AiFillLinkedin />
-            <AiFillGithub />
+            <a href="https://www.linkedin.com/in/steven-li-/" target="_blank">
+              <AiFillLinkedin />
+            </a>
+            <a href="https://github.com/StevenNZ" target="_blank">
+              <AiFillGithub />
+            </a>
           </div>
         </div>
       </div>
