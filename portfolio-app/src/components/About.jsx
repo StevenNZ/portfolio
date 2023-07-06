@@ -1,5 +1,6 @@
 import React from "react";
 import picture from "../assets/aboutpicture.svg";
+import Typed from "react-typed";
 
 const About = () => {
   return (
@@ -9,11 +10,11 @@ const About = () => {
         alt="Steven Li"
         className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] mx-auto"
       />
-      <div className="lg:mr-16">
+      <div className="lg:ml-12">
         <p className=" text-xl sm:text-3xl md:text-4xl font-bold pb-6">
           About Me 👨‍💻
         </p>
-        <p className="sm:text-lg md:text-xl text-gray-700">
+        <p className=" text-sm sm:text-base md:text-lg text-gray-700 text-left">
           Based in Auckland, New Zealand, I'm a penultimate-year software
           engineering student passionate about pursuing a career as a full-stack
           developer. As an enthusiastic individual, I thrive on problem-solving
