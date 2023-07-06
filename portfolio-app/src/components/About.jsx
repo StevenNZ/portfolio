@@ -27,7 +27,7 @@ const About = () => {
             I'm eager to contribute to the tech industry and make a positive
             impact through my work.
           </p>
-          <p className="pt-1">
+          <p className="pt-4">
             Some of my hobbies are{" "}
             <Typed
               strings={[
