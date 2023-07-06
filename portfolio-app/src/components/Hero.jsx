@@ -1,4 +1,5 @@
 import React from "react";
+import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 import picture from "../assets/profilepicture.jpg";
 
 const Hero = () => {
@@ -19,6 +20,10 @@ const Hero = () => {
             knack for programming and problem-solving. Explore my projects to
             see my skills and let's connect to discuss exciting opportunities.
           </p>
+          <div className="text-5xl flex justify-center gap-5 pt-6">
+            <AiFillLinkedin />
+            <AiFillGithub />
+          </div>
         </div>
       </div>
     </div>
