@@ -5,7 +5,7 @@ import picture from "../assets/profilepicture.jpg";
 const Hero = () => {
   return (
     <div className="text-black">
-      <div className="max-w-[1000px] mt-[-96px] w-full h-screen mx-auto flex justify-center flex-col text-center lg:flex-row lg:items-center ">
+      <div className="max-w-[1000px] w-full h-[calc(100vh-96px)] mx-auto flex justify-center flex-col text-center lg:flex-row lg:items-center ">
         <img
           src={picture}
           alt="Steven Li"
@@ -21,10 +21,18 @@ const Hero = () => {
             see my skills and let's connect to discuss exciting opportunities.
           </p>
           <div className="text-5xl flex justify-center gap-5 pt-6">
-            <a href="https://www.linkedin.com/in/steven-li-/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/steven-li-/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillLinkedin />
             </a>
-            <a href="https://github.com/StevenNZ" target="_blank">
+            <a
+              href="https://github.com/StevenNZ"
+              target="_blank"
+              rel="noreferrer"
+            >
               <AiFillGithub />
             </a>
           </div>
