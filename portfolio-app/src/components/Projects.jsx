@@ -17,7 +17,7 @@ const Projects = () => {
               src={image}
               alt={name}
               className={`mb-3 w-[350px] sm:w-[400px] md:w-[450px] max-w-[450px] mx-auto ${
-                id % 2 == 1 ? "order-2" : ""
+                id % 2 === 1 ? "order-2" : ""
               }`}
             />
             <div className=" lg:w-4/12 lg:mx-auto">
