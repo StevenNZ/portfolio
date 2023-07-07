@@ -7,7 +7,7 @@ export const projectLists = [
   {
     id: 1,
     name: "Pomodoro Study App",
-    github: "",
+    github: "https://github.com/StevenNZ/pomodoro",
     image: pomodoro,
     desc: "An android app that intends to introduce children/young teens to the pomodoro studying technique. The application was developed with java in android studio and firebase was used to handle backend database",
     lang: ["Java", "Firebase"],
@@ -15,7 +15,7 @@ export const projectLists = [
   {
     id: 2,
     name: "Quick Draw",
-    github: "https://github.com/StevenNZ/pomodoro",
+    github: "",
     image: draw,
     desc: "Developed a GUI speed drawing game with javafx where user draws a random word within a minute. Deep learning model was used with the google data set to predict user drawings and this app was collaborated in a team of 3 people ",
     lang: ["Java"],
@@ -26,7 +26,7 @@ export const projectLists = [
     github:
       "https://github.com/2022-Hackathon-Senior-HTML-Engineers/application-template",
     image: bevbinge,
-    desc: "Developed a web app using the MERN stack that makes online lectures more enjoyable by tasks/drinks. This was a hackathon project collaborated in a team of 6. ",
+    desc: "Developed a web app using MERN stack that makes online lectures more enjoyable by tasks/drinks. This was a hackathon project collaborated in a team of 6. ",
     lang: ["Javascript"],
   },
   {
