@@ -4,7 +4,7 @@ import Typed from "react-typed";
 
 const About = () => {
   return (
-    <section className="bg-white">
+    <section id="about" className="bg-white">
       <div className="max-w-[1000px] w-10/12 h-[calc(100vh-96px)] mx-auto flex justify-center flex-col text-left lg:flex-row lg:items-center">
         <img
           src={picture}

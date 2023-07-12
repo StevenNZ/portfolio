@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
@@ -13,10 +14,26 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-24 mx-auto px-8 text-black bg-white shadow-md">
         <h1 className="w-full text-3xl font-bold">Steven Li</h1>
         <ul className="hidden md:flex md:text-xl md:font-medium">
-          <li className="p-4">Home</li>
-          <li className="p-4">About</li>
-          <li className="p-4">Projects</li>
-          <li className="p-4">Contact</li>
+          <li className="p-4">
+            <Link smooth to="#home">
+              Home
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link smooth to="#about">
+              About
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link smooth to="#projects">
+              Projects
+            </Link>
+          </li>
+          <li className="p-4">
+            <Link smooth to="#contacts">
+              Contact
+            </Link>
+          </li>
         </ul>
         <div onClick={handleNav} className="flex left-[90%] md:hidden">
           <AiOutlineMenu size={30} />
@@ -36,10 +53,38 @@ const Navbar = () => {
           </div>
           <div className="flex h-5/6 justify-center items-center">
             <ul className="mt-10">
-              <li className="p-4 text-2xl text-center font-medium">Home</li>
-              <li className="p-4 text-2xl text-center font-medium">About</li>
-              <li className="p-4 text-2xl text-center font-medium">Projects</li>
-              <li className="p-4 text-2xl text-center font-medium">Contact</li>
+              <li
+                className="p-4 text-2xl text-center font-medium"
+                onClick={handleNav}
+              >
+                <Link smooth to="#home">
+                  Home
+                </Link>
+              </li>
+              <li
+                className="p-4 text-2xl text-center font-medium"
+                onClick={handleNav}
+              >
+                <Link smooth to="#about">
+                  About
+                </Link>
+              </li>
+              <li
+                className="p-4 text-2xl text-center font-medium"
+                onClick={handleNav}
+              >
+                <Link smooth to="#projects">
+                  Projects
+                </Link>
+              </li>
+              <li
+                className="p-4 text-2xl text-center font-medium"
+                onClick={handleNav}
+              >
+                <Link smooth to="#contacts">
+                  Contacts
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
