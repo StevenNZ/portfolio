@@ -72,7 +72,7 @@ export const languages = [
     image: html,
   },
   {
-    lang: "Android",
+    lang: "Android Studio",
     image: android,
   },
 ];
