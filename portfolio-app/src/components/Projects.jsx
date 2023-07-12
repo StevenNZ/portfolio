@@ -4,36 +4,41 @@ import { projectLists } from "../data";
 
 const Projects = () => {
   return (
-    <div className="max-w-[1200px] w-full h-full mx-auto flex justify-center flex-col text-center">
-      <h1 className="text-xl text-center sm:text-3xl md:text-4xl font-bold pb-10">
-        Projects
-      </h1>
+    <section id="projects" className="w-full">
+      <div className="max-w-[1000px] w-9/12 h-full mx-auto pt-24 flex justify-center items-center flex-col text-center lg:w-10/12">
+        <h1 className="text-xl text-center sm:text-3xl md:text-4xl font-bold pb-10 md:pb-16">
+          Projects 🐱‍💻
+        </h1>
 
-      {projectLists.map((project, index) => {
-        const { id, name, github, image, desc, lang } = project;
-        return (
-          <div key={id} className="mb-24 lg:flex lg:flex-row lg:items-center">
-            <img
-              src={image}
-              alt={name}
-              className={`mb-3 w-[350px] sm:w-[400px] md:w-[450px] max-w-[450px] mx-auto ${
-                id % 2 === 1 ? "order-2" : ""
-              }`}
-            />
-            <div className=" lg:w-4/12 lg:mx-auto">
-              <h2 className="font-bold text-lg md:text-xl mb-3">{name}</h2>
-              <p className="mb-3 text-gray-700 md:text-xl">{desc}</p>
-              <LanguageList languages={lang} />
-              <div className="flex justify-center text-5xl">
-                <a href={github} target="_blank" rel="noreferrer">
-                  <AiFillGithub />
-                </a>
+        {projectLists.map((project) => {
+          const { id, name, github, image, desc, lang } = project;
+          return (
+            <div
+              key={id}
+              className="bg-white mb-24 p-5 rounded-2xl shadow-2xl lg:flex lg:flex-row lg:items-center w-full max-w-[550px] lg:max-w-full"
+            >
+              <img
+                src={image}
+                alt={name}
+                className={`mb-3 lg:w-[450px] mx-auto ${
+                  id % 2 === 1 ? "order-2" : ""
+                }`}
+              />
+              <div className=" lg:w-4/12 lg:mx-auto">
+                <h2 className="font-bold text-lg md:text-xl mb-3">{name}</h2>
+                <p className="mb-3 text-gray-700 md:text-xl">{desc}</p>
+                <LanguageList languages={lang} />
+                <div className="flex justify-center text-5xl">
+                  <a href={github} target="_blank" rel="noreferrer">
+                    <AiFillGithub />
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </section>
   );
 };
 
