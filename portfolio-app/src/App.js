@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
 
-      <div className="px-[10%]">
+      <div>
         <Hero />
         <About />
         <Projects />
