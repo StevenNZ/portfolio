@@ -5,7 +5,7 @@ import picture from "../assets/profilepicture.jpg";
 const Hero = () => {
   return (
     <div className="text-black">
-      <div className="max-w-[1000px] w-full h-[calc(100vh-96px)] mx-auto flex justify-center flex-col text-center lg:flex-row lg:items-center ">
+      <div className="max-w-[1000px] w-10/12 h-screen mx-auto flex justify-center flex-col text-center lg:flex-row lg:items-center">
         <img
           src={picture}
           alt="Steven Li"

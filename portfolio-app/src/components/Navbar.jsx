@@ -4,13 +4,32 @@ import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = () => {
   const [nav, setNav] = useState(true);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      setVisible(prevScrollPos > currentScrollPos);
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <section>
+    <nav
+      className={`fixed top-0 w-full transition-all duration-300 ${
+        visible ? "opacity-100" : "opacity-0 -translate-y-full"
+      }`}
+    >
       <div className="flex fixed justify-between items-center h-24 w-full mx-auto px-8 text-black bg-white shadow-md">
         <h1 className="w-full text-3xl font-bold">Steven Li</h1>
         <ul className="hidden md:flex md:text-xl md:font-medium">
@@ -89,7 +108,7 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 
