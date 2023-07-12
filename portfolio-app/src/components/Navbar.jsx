@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { HashLink as Link } from "react-router-hash-link";
 
@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <section>
-      <div className="flex justify-between items-center h-24 mx-auto px-8 text-black bg-white shadow-md">
+      <div className="flex fixed justify-between items-center h-24 w-full mx-auto px-8 text-black bg-white shadow-md">
         <h1 className="w-full text-3xl font-bold">Steven Li</h1>
         <ul className="hidden md:flex md:text-xl md:font-medium">
           <li className="p-4">
