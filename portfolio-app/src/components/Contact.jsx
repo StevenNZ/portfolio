@@ -27,7 +27,7 @@ const Contact = () => {
 
   return (
     <div id="contacts" className=" bg-white">
-      <div className="py-16 lg:py-10 px-4 mx-auto w-10/12 max-w-[1000px] text-center">
+      <div className="py-16 lg:py-10 px-4 mx-auto w-10/12 max-w-2xl text-center">
         <h2 className="mb-4 text-4xl font-extrabold text-black">Contact Me!</h2>
         <p className="mb-8 lg:mb-10 font-light text-gray-900 sm:text-xl">
           let's connect to discuss exciting opportunities.
