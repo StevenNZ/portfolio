@@ -27,16 +27,14 @@ const Contact = () => {
 
   return (
     <div id="contacts" className=" bg-white">
-      <div className="py-8 lg:py-10 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl font-extrabold text-center text-black">
-          Contact Me!
-        </h2>
-        <p className="mb-6 lg:mb-10 font-light text-center text-gray-900 sm:text-xl">
+      <div className="py-16 lg:py-10 px-4 mx-auto w-10/12 max-w-[1000px] text-center">
+        <h2 className="mb-4 text-4xl font-extrabold text-black">Contact Me!</h2>
+        <p className="mb-8 lg:mb-10 font-light text-gray-900 sm:text-xl">
           let's connect to discuss exciting opportunities.
         </p>
         <form action="#" ref={form} onSubmit={sendEmail} className="space-y-8">
           <div>
-            <label className="block mb-2 text-sm font-medium text-gray-900">
+            <label className="block mb-2 text-sm text-start font-medium text-gray-900">
               Your email
             </label>
             <input
@@ -49,7 +47,7 @@ const Contact = () => {
             />
           </div>
           <div className="sm:col-span-2">
-            <label className="block mb-2 text-sm font-medium text-gray-900">
+            <label className="block mb-2 text-sm text-start font-medium text-gray-900">
               Your message
             </label>
             <textarea
@@ -63,7 +61,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-gray-400 sm:w-fit"
+            className="py-3 px-5 text-sm font-medium text-black rounded-lg bg-gray-400 sm:w-fit"
           >
             Send message
           </button>
