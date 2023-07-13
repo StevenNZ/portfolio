@@ -12,7 +12,11 @@ body {
 
 .dark h1,
 .dark h2,
-.dark h3 {
+.dark h3,
+.dark label,
+.dark textarea,
+.dark input,
+.dark button {
   color: #e0e0e0;
 }
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { FaSun } from "react-icons/fa";
+import { RiSunFill } from "react-icons/ri";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
@@ -42,7 +42,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             onClick={toggleDarkMode}
           />
         ) : (
-          <FaSun
+          <RiSunFill
             className="text-3xl ml-auto md:mr-auto md:ml-0 text-white"
             onClick={toggleDarkMode}
           />

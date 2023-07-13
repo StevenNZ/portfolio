@@ -20,7 +20,7 @@ const Projects = () => {
               <img
                 src={image}
                 alt={name}
-                className={`mb-3 lg:w-[450px] mx-auto ${
+                className={`mb-3 lg:mb-0 lg:w-[450px] mx-auto ${
                   id % 2 === 1 ? "order-2" : ""
                 }`}
               />
