@@ -6,6 +6,16 @@ body {
   background-color: #f7f7f7;
 }
 
+.dark {
+  background-color: #121212;
+}
+
+.dark h1,
+h2,
+h3 {
+  color: #e0e0e0;
+}
+
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
