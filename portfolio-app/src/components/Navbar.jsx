@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import { HashLink as Link } from "react-router-hash-link";
 
-const Navbar = () => {
+const Navbar = ({ toggleDarkMode }) => {
   const [nav, setNav] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -31,7 +32,11 @@ const Navbar = () => {
       }`}
     >
       <div className="flex fixed justify-between items-center h-24 w-full mx-auto px-8 text-black bg-white shadow-md">
-        <h1 className="w-full text-3xl font-bold">Steven Li</h1>
+        <h1 className="w-auto text-3xl font-bold mr-8">Steven Li</h1>
+        <BsFillMoonStarsFill
+          className="text-2xl ml-auto md:mr-auto md:ml-0 dark:text-white"
+          onClick={toggleDarkMode}
+        />
         <ul className="hidden md:flex md:text-xl md:font-medium">
           <li className="p-4">
             <Link smooth to="#home">
@@ -54,7 +59,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div onClick={handleNav} className="flex left-[90%] md:hidden">
+        <div onClick={handleNav} className="flex left-[90%] md:hidden ml-8">
           <AiOutlineMenu size={30} />
         </div>
         <div
