@@ -32,7 +32,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         visible ? "opacity-100" : "opacity-0 -translate-y-full"
       }`}
     >
-      <div className="flex fixed justify-between items-center h-24 w-full mx-auto px-8 text-black bg-white shadow-md dark:bg-[#212121] dark:text-[#e0e0e0]">
+      <div className="flex fixed justify-between items-center h-24 w-full mx-auto px-8 text-black bg-white shadow-md dark:bg-[#212121] dark:text-[#e0e0e0] dark:border-b-[1px] dark:border-[#00000093]">
         <h1 className="w-auto text-3xl font-bold mr-8 tracking-wider">
           Steven Li
         </h1>

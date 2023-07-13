@@ -16,7 +16,7 @@ export const projectLists = [
     name: "Pomodoro Study App",
     github: "https://github.com/StevenNZ/pomodoro",
     image: pomodoro,
-    desc: "An android app that intends to introduce children/young teens to the pomodoro studying technique. The application was developed with java in android studio and firebase was used to handle backend database",
+    desc: "An android app that introduces children and young teens to the pomodoro studying technique. The application was developed with java in android studio and firebase was used to handle backend database",
     lang: ["Java", "Firebase"],
   },
   {

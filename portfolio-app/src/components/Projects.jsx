@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section id="projects" className="w-full">
       <div className="max-w-[1000px] w-9/12 h-full mx-auto pt-24 flex justify-center items-center flex-col text-center lg:w-10/12">
-        <h1 className="text-xl text-center sm:text-3xl md:text-4xl font-bold pb-10 md:pb-16">
+        <h1 className="text-2xl text-center sm:text-3xl md:text-4xl font-bold pb-10 md:pb-16">
           Projects 🐱‍💻
         </h1>
 
@@ -15,7 +15,7 @@ const Projects = () => {
           return (
             <div
               key={id}
-              className="bg-white mb-24 p-5 rounded-2xl shadow-2xl lg:flex lg:flex-row lg:items-center w-full max-w-[550px] lg:max-w-full"
+              className="bg-white mb-24 p-5 rounded-2xl shadow-2xl lg:flex lg:flex-row lg:items-center w-full max-w-[550px] lg:max-w-full dark:bg-[#212121]"
             >
               <img
                 src={image}
@@ -28,7 +28,7 @@ const Projects = () => {
                 <h2 className="font-bold text-lg md:text-xl mb-3">{name}</h2>
                 <p className="mb-3 text-gray-700 md:text-xl">{desc}</p>
                 <LanguageList languages={lang} />
-                <div className="flex justify-center text-5xl">
+                <div className="flex justify-center text-5xl dark:text-[#e0e0e0]">
                   <a href={github} target="_blank" rel="noreferrer">
                     <AiFillGithub />
                   </a>
@@ -46,9 +46,9 @@ const LanguageList = ({ languages }) => {
   return (
     <div className="flex justify-center mb-3 md:text-xl">
       {languages.map((lang) => (
-        <p key={lang} className="mx-4 font-medium">
+        <h3 key={lang} className="mx-4 font-medium">
           {lang}
-        </p>
+        </h3>
       ))}
     </div>
   );

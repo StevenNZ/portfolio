@@ -12,10 +12,10 @@ const About = () => {
           className="w-[400px] mx-auto object-contain"
         />
         <div className="lg:ml-12">
-          <h1 className=" text-xl text-center sm:text-3xl md:text-4xl font-bold py-6 lg:text-start">
+          <h1 className=" text-2xl text-center sm:text-3xl md:text-4xl font-bold py-6 lg:text-start">
             About Me 👨‍💻
           </h1>
-          <div className="text-gray-600 dark:text-gray-400">
+          <div className="text-gray-600">
             <p>
               Based in Auckland, New Zealand, I'm a penultimate-year software
               engineering student passionate about pursuing a career as a
