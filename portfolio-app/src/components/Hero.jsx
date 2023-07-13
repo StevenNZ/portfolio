@@ -17,7 +17,7 @@ const Hero = () => {
           <h1 className=" text-2xl sm:text-3xl md:text-4xl font-bold pb-6">
             Software Engineering Student 👋
           </h1>
-          <p className="sm:text-lg md:text-xl text-gray-500">
+          <p className="sm:text-lg md:text-xl text-gray-600 dark:text-gray-400">
             Hi, I'm Steven Li. A passionate software engineering student with a
             knack for programming and problem-solving. Explore my projects to
             see my skills and let's connect to discuss exciting opportunities.
