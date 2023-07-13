@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -12,6 +12,16 @@ function App() {
   const toggleDarkMode = () => {
     setDarkMode(!darkMode);
   };
+
+  useEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      setDarkMode(true);
+    }
+  }, []);
 
   return (
     <Router>
