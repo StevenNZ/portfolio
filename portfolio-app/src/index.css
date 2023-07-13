@@ -11,8 +11,8 @@ body {
 }
 
 .dark h1,
-h2,
-h3 {
+.dark h2,
+.dark h3 {
   color: #e0e0e0;
 }
 
