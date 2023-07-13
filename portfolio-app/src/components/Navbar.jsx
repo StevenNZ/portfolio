@@ -29,7 +29,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <nav
       className={`fixed top-0 w-full transition-all duration-300 ${
-        visible ? "opacity-100" : "opacity-0 -translate-y-full"
+        visible
+          ? "opacity-100"
+          : "opacity-0 -translate-y-full pointer-events-none"
       }`}
     >
       <div className="flex fixed justify-between items-center h-24 w-full mx-auto px-8 text-black bg-white shadow-md dark:bg-[#212121] dark:text-[#e0e0e0] dark:border-b-[1px] dark:border-[#00000093]">
