@@ -23,6 +23,14 @@ function App() {
     }
   }, []);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    root.style.setProperty(
+      "--scrollbar-track-color",
+      darkMode ? "#121212" : "#f7f7f7"
+    );
+  }, [darkMode]);
+
   return (
     <Router>
       <div id="home" className={`App ${darkMode ? "dark" : ""}`}>
