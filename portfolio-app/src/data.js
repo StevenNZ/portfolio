@@ -16,7 +16,7 @@ export const projectLists = [
     name: "Pomodoro Study App",
     github: "https://github.com/StevenNZ/pomodoro",
     image: pomodoro,
-    desc: "An android app that intends to introduce children/young teens to the pomodoro studying technique. The application was developed with java in android studio and firebase was used to handle backend database",
+    desc: "An android app that introduces children and young teens to the pomodoro studying technique. The application was developed with java in android studio and firebase was used to handle backend database",
     lang: ["Java", "Firebase"],
   },
   {
@@ -24,7 +24,7 @@ export const projectLists = [
     name: "Quick Draw",
     github: "",
     image: draw,
-    desc: "Developed a GUI speed drawing game with javafx where user draws a random word within a minute. Deep learning model was used with the google data set to predict user drawings and this app was collaborated in a team of 3 people ",
+    desc: "Developed a GUI speed drawing game with javafx where user draws a random word within a minute. Deep learning model was used with the google data set to predict user drawings and this app was collaborated in a team of 3",
     lang: ["Java"],
   },
   {
