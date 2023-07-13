@@ -24,7 +24,7 @@ export const projectLists = [
     name: "Quick Draw",
     github: "",
     image: draw,
-    desc: "Developed a GUI speed drawing game with javafx where user draws a random word within a minute. Deep learning model was used with the google data set to predict user drawings and this app was collaborated in a team of 3 people ",
+    desc: "Developed a GUI speed drawing game with javafx where user draws a random word within a minute. Deep learning model was used with the google data set to predict user drawings and this app was collaborated in a team of 3",
     lang: ["Java"],
   },
   {

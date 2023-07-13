@@ -38,12 +38,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </h1>
         {!darkMode ? (
           <BsFillMoonStarsFill
-            className="text-2xl ml-auto md:mr-auto md:ml-0"
+            className="text-2xl ml-auto md:mr-auto md:ml-0 cursor-pointer"
             onClick={toggleDarkMode}
           />
         ) : (
           <RiSunFill
-            className="text-3xl ml-auto md:mr-auto md:ml-0 text-white"
+            className="text-3xl ml-auto md:mr-auto md:ml-0 text-white cursor-pointer"
             onClick={toggleDarkMode}
           />
         )}
