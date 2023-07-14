@@ -1,18 +1,19 @@
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import picture from "../assets/profilepicture.jpg";
+import picture from "../assets/pomopic.jpg";
 import { languages } from "../data";
 import { Tooltip } from "react-tooltip";
 
 const Hero = () => {
   return (
     <section className="text-black lg:min-h-screen lg:flex lg:flex-col lg:justify-center">
-      <div className="max-w-[1000px] w-10/12 h-full pt-[166px] mx-auto flex justify-center flex-col text-center lg:[] lg:flex-row lg:items-center">
-        <img
-          src={picture}
-          alt="Steven Li"
-          className="w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] mx-auto mb-7 border-2 border-black rounded-full order-1 lg:order-2 dark:border-[#e0e0e0]"
-        />
+      <div className="max-w-[1000px] w-10/12 h-full pt-[166px] mx-auto flex justify-center flex-col text-center lg:flex-row lg:items-center">
+        <div className="order-1 lg:order-2 mx-auto mb-7">
+          <div
+            className="profile-picture w-[250px] h-[250px] sm:min-w-[300px] sm:min-h-[300px] md:min-w-[350px] md:min-h-[350px] border-2 border-[#121212] dark:border-[#e0e0e0]"
+            title="Picture of Me!"
+          ></div>
+        </div>
         <div className="order-2 lg:order-1 lg:mr-20">
           <h1 className=" text-2xl sm:text-3xl md:text-4xl font-bold pb-6">
             Software Engineering Student 👋
