@@ -72,7 +72,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           </li>
         </ul>
         <div onClick={handleNav} className="flex left-[90%] md:hidden ml-8">
-          <AiOutlineMenu size={30} className="dark:text-[#e0e0e0]" />
+          <AiOutlineMenu
+            size={30}
+            className="dark:text-[#e0e0e0] cursor-pointer"
+          />
         </div>
         <div
           className={
@@ -85,7 +88,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             onClick={handleNav}
             className="flex justify-end mt-[33px] mr-[30px]"
           >
-            <AiOutlineClose size={30} />
+            <AiOutlineClose size={30} className="cursor-pointer" />
           </div>
           <div className="flex h-5/6 justify-center items-center">
             <ul className="mt-10">
