@@ -51,9 +51,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           />
         )}
         <ul className="hidden md:flex md:text-xl md:font-medium">
-          {links.map((link) => {
+          {links.map((link, index) => {
             return (
-              <li className="p-4">
+              <li key={index} className="p-4">
                 <Link
                   smooth
                   to={link.id}
