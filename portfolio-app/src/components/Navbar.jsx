@@ -28,7 +28,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <nav
-      className={`fixed top-0 w-full transition-all duration-300 ${
+      className={`fixed top-0 w-full transition-all duration-300 z-10 ${
         visible
           ? "opacity-100"
           : "opacity-0 -translate-y-full pointer-events-none"
