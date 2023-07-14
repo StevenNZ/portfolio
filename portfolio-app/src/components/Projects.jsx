@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects" className="w-full">
       <div className="max-w-[1000px] w-9/12 h-full mx-auto pt-24 flex justify-center items-center flex-col text-center lg:w-10/12">
         <h1 className="text-2xl text-center sm:text-3xl md:text-4xl font-bold pb-10 md:pb-16">
-          Projects 🐱‍💻
+          Projects 🏆
         </h1>
 
         {projectLists.map((project) => {
@@ -28,7 +28,7 @@ const Projects = () => {
                 <h2 className="font-bold text-lg md:text-xl mb-3">{name}</h2>
                 <p className="mb-3 text-gray-700 md:text-xl">{desc}</p>
                 <LanguageList languages={lang} />
-                <div className="flex justify-center text-5xl dark:text-[#e0e0e0]">
+                <div className="flex justify-center text-5xl dark:text-[#e0e0e0] transition ease-in-out hover:scale-125 hover:text-[#89CFF0] hover:duration-300">
                   <a href={github} target="_blank" rel="noreferrer">
                     <AiFillGithub />
                   </a>
