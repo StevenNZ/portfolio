@@ -40,12 +40,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </h1>
         {!darkMode ? (
           <BsFillMoonStarsFill
-            className="text-2xl ml-auto md:mr-auto md:ml-0 cursor-pointer"
+            className="text-2xl ml-auto md:mr-auto md:ml-0 cursor-pointer transition ease-in-out hover:scale-125 hover:duration-300"
             onClick={toggleDarkMode}
           />
         ) : (
           <RiSunFill
-            className="text-3xl ml-auto md:mr-auto md:ml-0 text-white cursor-pointer"
+            className="text-3xl ml-auto md:mr-auto md:ml-0 text-white cursor-pointer transition ease-in-out hover:scale-125 hover:duration-300"
             onClick={toggleDarkMode}
           />
         )}
@@ -74,7 +74,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div onClick={handleNav} className="flex left-[90%] md:hidden ml-8">
           <AiOutlineMenu
             size={30}
-            className="dark:text-[#e0e0e0] cursor-pointer"
+            className="dark:text-[#e0e0e0] cursor-pointer transition ease-in-out hover:scale-125 hover:duration-300"
           />
         </div>
         <div
@@ -88,7 +88,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             onClick={handleNav}
             className="flex justify-end mt-[33px] mr-[30px]"
           >
-            <AiOutlineClose size={30} className="cursor-pointer" />
+            <AiOutlineClose
+              size={30}
+              className="cursor-pointer transition ease-in-out hover:scale-125 hover:duration-300"
+            />
           </div>
           <div className="flex h-5/6 justify-center items-center">
             <ul className="mt-10">
