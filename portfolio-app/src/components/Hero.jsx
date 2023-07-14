@@ -29,14 +29,14 @@ const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillLinkedin />
+              <AiFillLinkedin className="transition ease-in-out hover:text-[#89CFF0] hover:duration-300" />
             </a>
             <a
               href="https://github.com/StevenNZ"
               target="_blank"
               rel="noreferrer"
             >
-              <AiFillGithub />
+              <AiFillGithub className="transition ease-in-out hover:text-[#89CFF0] hover:duration-300" />
             </a>
           </div>
         </div>

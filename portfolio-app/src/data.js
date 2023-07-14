@@ -76,3 +76,22 @@ export const languages = [
     image: android,
   },
 ];
+
+export const links = [
+  {
+    id: "#home",
+    text: "Home",
+  },
+  {
+    id: "#about",
+    text: "About",
+  },
+  {
+    id: "#projects",
+    text: "Projects",
+  },
+  {
+    id: "#contact",
+    text: "Contact",
+  },
+];

@@ -3,6 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { RiSunFill } from "react-icons/ri";
 import { HashLink as Link } from "react-router-hash-link";
+import { links } from "../data";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [nav, setNav] = useState(true);
@@ -50,26 +51,19 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           />
         )}
         <ul className="hidden md:flex md:text-xl md:font-medium">
-          <li className="p-4">
-            <Link smooth to="#home">
-              Home
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link smooth to="#about">
-              About
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link smooth to="#projects">
-              Projects
-            </Link>
-          </li>
-          <li className="p-4">
-            <Link smooth to="#contacts">
-              Contact
-            </Link>
-          </li>
+          {links.map((link) => {
+            return (
+              <li className="p-4">
+                <Link
+                  smooth
+                  to={link.id}
+                  className="transition ease-in-out hover:text-[#89CFF0] hover:duration-300"
+                >
+                  {link.text}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
         <div onClick={handleNav} className="flex left-[90%] md:hidden ml-8">
           <AiOutlineMenu
