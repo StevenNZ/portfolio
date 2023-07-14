@@ -1,6 +1,5 @@
 import React from "react";
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import picture from "../assets/pomopic.jpg";
 import { languages } from "../data";
 import { Tooltip } from "react-tooltip";
 
