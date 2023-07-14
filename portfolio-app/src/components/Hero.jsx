@@ -51,7 +51,7 @@ const Hero = () => {
           {languages.map((language, index) => {
             return (
               <li
-                className="m-2 p-4 rounded-full bg-white shadow-2xl dark:bg-gray-700"
+                className="m-2 p-4 rounded-full bg-white shadow-2xl dark:bg-gray-700 transition ease-in-out hover:scale-125 hover:duration-300"
                 key={index}
                 data-tooltip-id={index + 1}
                 data-tooltip-content={language.lang}

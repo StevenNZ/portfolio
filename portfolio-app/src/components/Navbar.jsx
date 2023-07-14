@@ -41,12 +41,12 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </h1>
         {!darkMode ? (
           <BsFillMoonStarsFill
-            className="text-2xl ml-auto md:mr-auto md:ml-0 cursor-pointer transition ease-in-out hover:scale-125 hover:duration-300"
+            className="text-2xl ml-auto md:mr-auto md:ml-0 cursor-pointer transition ease-in-out hover:scale-125 hover:text-[#7c85a8] hover:duration-300"
             onClick={toggleDarkMode}
           />
         ) : (
           <RiSunFill
-            className="text-3xl ml-auto md:mr-auto md:ml-0 text-white cursor-pointer transition ease-in-out hover:scale-125 hover:duration-300"
+            className="text-3xl ml-auto md:mr-auto md:ml-0 text-white cursor-pointer transition ease-in-out hover:scale-125 hover:text-[#fdb813] hover:duration-300"
             onClick={toggleDarkMode}
           />
         )}
@@ -68,7 +68,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         <div onClick={handleNav} className="flex left-[90%] md:hidden ml-8">
           <AiOutlineMenu
             size={30}
-            className="dark:text-[#e0e0e0] cursor-pointer transition ease-in-out hover:scale-125 hover:duration-300"
+            className="cursor-pointer transition ease-in-out hover:scale-125 hover:text-[#89CFF0] hover:duration-300"
           />
         </div>
         <div
@@ -84,7 +84,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           >
             <AiOutlineClose
               size={30}
-              className="cursor-pointer transition ease-in-out hover:scale-125 hover:duration-300"
+              className="cursor-pointer transition ease-in-out hover:scale-125 hover:text-[#b65c5c] hover:duration-300"
             />
           </div>
           <div className="flex h-5/6 justify-center items-center">
